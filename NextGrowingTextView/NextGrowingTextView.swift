@@ -170,8 +170,7 @@ open class NextGrowingTextView: UIView {
     let inset = textView.textContainerInset
     
     NSLayoutConstraint.activate([
-      
-      placeholderLabel.topAnchor.constraint(equalTo: topAnchor, constant: inset.top),
+      placeholderLabel.centerYAnchor.constraint(equalTo: centerYAnchor, constant: 0),
       placeholderLabel.bottomAnchor.constraint(lessThanOrEqualTo: bottomAnchor, constant: -inset.bottom),
                   
     ])
