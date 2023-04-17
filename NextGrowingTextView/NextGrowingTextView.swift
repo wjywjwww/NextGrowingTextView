@@ -168,11 +168,8 @@ open class NextGrowingTextView: UIView {
     addSubview(placeholderLabel)
     
     let inset = textView.textContainerInset
-    
     NSLayoutConstraint.activate([
-      placeholderLabel.centerYAnchor.constraint(equalTo: centerYAnchor, constant: 0),
-      placeholderLabel.bottomAnchor.constraint(lessThanOrEqualTo: bottomAnchor, constant: -inset.bottom),
-                  
+      placeholderLabel.centerYAnchor.constraint(equalTo: centerYAnchor, constant: 0)
     ])
     
     switch configuration.placeholderHorizontalLayout {
